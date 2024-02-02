@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="vr">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import vr_hand urdf file -->
+    <xacro:include filename="$(find vr)/config/vr.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="vr.ros2_control.xacro" />
+
+
+    <xacro:vr_ros2_control name="vr" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

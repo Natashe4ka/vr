@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: vr
+    relative_path: config/vr.urdf
+  srdf:
+    relative_path: config/vr.srdf
+  package_settings:
+    author_name: N
+    author_email: n@voltbro.com
+    generated_timestamp: 1700657567
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

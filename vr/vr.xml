@@ -1,0 +1,10 @@
+<library path="vr">
+  <class name="vr/VrSystem"
+         type="vr::VrSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Robot hardware plugin for 6 dof robot tutorial.
+    </description>
+  </class>
+
+</library>
